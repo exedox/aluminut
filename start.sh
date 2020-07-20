@@ -20,3 +20,6 @@ if [ -n "${NUT_PASSWD}" ]; then
   echo "Nut passwd set to ${NUT_PASSWD}"
 fi
 
+python3.6 nut.py -h
+
+
