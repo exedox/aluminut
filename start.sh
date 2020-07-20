@@ -11,12 +11,12 @@ else
 fi
 #Set variables
 if [ -n "${NUT_USER}" ]; then
-  sed -i -e 's/AdMiN/'${NUT_USER}'/g' /nut/conf/users.conf
+  sed -i -e 's/user/'${NUT_USER}'/g' /nut/conf/users.conf
   echo "Nut user set to ${NUT_USER}"
 fi
 
 if [ -n "${NUT_PASSWD}" ]; then
-  sed -i -e 's/nYsTIaNICHIm/'${NUT_PASSWD}'/g' /nut/conf/users.conf
+  sed -i -e 's/password/'${NUT_PASSWD}'/g' /nut/conf/users.conf
   echo "Nut passwd set to ${NUT_PASSWD}"
 fi
 
